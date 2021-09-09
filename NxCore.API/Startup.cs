@@ -1,3 +1,4 @@
+using IdentityServer4.AccessTokenValidation;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,6 +29,12 @@ namespace NxCore.API
         {
 
             services.AddControllers();
+            services.AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme) // "Bearer" token authentication
+                .AddIdentityServerAuthentication(options => {
+                    options.Authority = "https://localhost:5001"; // url to our IDP app
+                    options.ApiName = "nxcoreapi";  // most match IDP config apis
+                });
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "NxCore.API", Version = "v1" });
@@ -48,7 +55,9 @@ namespace NxCore.API
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            app.UseAuthentication();
+
+            app.UseAuthorization(); // access to controllers
 
             app.UseEndpoints(endpoints =>
             {

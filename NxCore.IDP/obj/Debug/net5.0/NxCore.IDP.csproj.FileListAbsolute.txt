@@ -69,3 +69,4 @@ C:\OTHER_APPS_NIXA\.NET-CORE-N\NxCore\NxCore.IDP\obj\Debug\net5.0\NxCore.IDP.dll
 C:\OTHER_APPS_NIXA\.NET-CORE-N\NxCore\NxCore.IDP\obj\Debug\net5.0\ref\NxCore.IDP.dll
 C:\OTHER_APPS_NIXA\.NET-CORE-N\NxCore\NxCore.IDP\obj\Debug\net5.0\NxCore.IDP.pdb
 C:\OTHER_APPS_NIXA\.NET-CORE-N\NxCore\NxCore.IDP\obj\Debug\net5.0\NxCore.IDP.genruntimeconfig.cache
+C:\OTHER_APPS_NIXA\.NET-CORE-N\NxCore\NxCore.IDP\obj\Debug\net5.0\NxCore.IDP.csproj.AssemblyReference.cache

@@ -27,3 +27,14 @@ C:\OTHER_APPS_NIXA\.NET-CORE-N\NxCore\NxCore.API\obj\Debug\net5.0\NxCore.API.dll
 C:\OTHER_APPS_NIXA\.NET-CORE-N\NxCore\NxCore.API\obj\Debug\net5.0\ref\NxCore.API.dll
 C:\OTHER_APPS_NIXA\.NET-CORE-N\NxCore\NxCore.API\obj\Debug\net5.0\NxCore.API.pdb
 C:\OTHER_APPS_NIXA\.NET-CORE-N\NxCore\NxCore.API\obj\Debug\net5.0\NxCore.API.genruntimeconfig.cache
+C:\OTHER_APPS_NIXA\.NET-CORE-N\NxCore\NxCore.API\bin\Debug\net5.0\IdentityModel.dll
+C:\OTHER_APPS_NIXA\.NET-CORE-N\NxCore\NxCore.API\bin\Debug\net5.0\IdentityModel.AspNetCore.OAuth2Introspection.dll
+C:\OTHER_APPS_NIXA\.NET-CORE-N\NxCore\NxCore.API\bin\Debug\net5.0\IdentityServer4.AccessTokenValidation.dll
+C:\OTHER_APPS_NIXA\.NET-CORE-N\NxCore\NxCore.API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\OTHER_APPS_NIXA\.NET-CORE-N\NxCore\NxCore.API\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\OTHER_APPS_NIXA\.NET-CORE-N\NxCore\NxCore.API\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\OTHER_APPS_NIXA\.NET-CORE-N\NxCore\NxCore.API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\OTHER_APPS_NIXA\.NET-CORE-N\NxCore\NxCore.API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\OTHER_APPS_NIXA\.NET-CORE-N\NxCore\NxCore.API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\OTHER_APPS_NIXA\.NET-CORE-N\NxCore\NxCore.API\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\OTHER_APPS_NIXA\.NET-CORE-N\NxCore\NxCore.API\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll

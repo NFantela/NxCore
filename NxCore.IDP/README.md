@@ -13,3 +13,7 @@ uncheck launch browser
 3) Ading Identity Server quickstartUI
 dotnet new is4ui
 -- then in startup.cs uncomment services.AddControllersWithViews(), UseStaticFiles(), UseRouting(), UseEndpoints()
+
+4) using Authorization Code Flow + PKCE
+- client issues code_challenge -> IDP provider returns id_token and access_token
+- client sends access_token to API

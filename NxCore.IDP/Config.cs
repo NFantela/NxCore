@@ -12,12 +12,24 @@ namespace NxCore.IDP
         public static IEnumerable<IdentityResource> IdentityResources =>
             new IdentityResource[]
             { 
-                new IdentityResources.OpenId()
+                new IdentityResources.OpenId(),
+                 new IdentityResources.Profile(),
+                 new IdentityResources.Address(),
+                 new IdentityResource(
+                     "roles", "Your roles(s)",
+                     new List<string>(){ "role"}
+                     )
             };
 
         public static IEnumerable<ApiScope> ApiScopes =>
             new ApiScope[]
-            { };
+            { 
+            };
+        public static IEnumerable<ApiResource> Apis =>
+            new ApiResource[]
+            {
+                 new ApiResource("nxcoreapi", "NxCore Demo API")
+            };
 
         public static IEnumerable<Client> Clients =>
             new Client[] 
