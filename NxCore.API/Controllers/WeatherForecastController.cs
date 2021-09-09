@@ -10,7 +10,6 @@ namespace NxCore.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    [Authorize]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
@@ -37,5 +36,8 @@ namespace NxCore.API.Controllers
             })
             .ToArray();
         }
+
+
+
     }
 }

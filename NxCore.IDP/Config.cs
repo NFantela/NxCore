@@ -28,7 +28,8 @@ namespace NxCore.IDP
         public static IEnumerable<ApiResource> Apis =>
             new ApiResource[]
             {
-                 new ApiResource("nxcoreapi", "NxCore Demo API")
+                // api requires role in token
+                 new ApiResource("nxcoreapi", "NxCore Demo API", new List<string>(){ "role" })
             };
 
         public static IEnumerable<Client> Clients =>
