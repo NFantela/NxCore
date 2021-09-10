@@ -17,3 +17,11 @@ dotnet new is4ui
 4) using Authorization Code Flow + PKCE
 - client issues code_challenge -> IDP provider returns id_token and access_token
 - client sends access_token to API
+
+
+5) Authorization policies:
+Role Based Access Control VS Attriute based ABAC
+- both are based on claims
+1st i simple e.g. "payingUser"   other is more complex combination of cloaims 
+and is preffered to avoid clreating too much roles
+e.g. specific supscription and country : belgium

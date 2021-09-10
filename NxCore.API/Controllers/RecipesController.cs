@@ -17,6 +17,7 @@ namespace NxCore.API.Controllers
     {
         [HttpPost()]
         [Authorize(Roles = "PayingUser")] // matches  new Claim("role", "PayingUser") // this will validate token and check if PayingUser
+        // [Authorize(Policy = "MustOwnImage")] // this is our custom authorization policy (but requires passing of {id} trough route none here
         public async Task<IActionResult> CreateRecipe(RecipeForCreation recipeForCreation )
         {
             // we get owner id from token bettter than from header etc

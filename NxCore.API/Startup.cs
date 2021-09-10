@@ -1,4 +1,5 @@
 using IdentityServer4.AccessTokenValidation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -8,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using NxCore.API.Authorization;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,10 +37,28 @@ namespace NxCore.API
                     options.ApiName = "nxcoreapi";  // most match IDP config apis
                 });
 
+            services.AddHttpContextAccessor(); // we need him so it can be injected elswhere e.g.  handlers
+          //  services.AddScoped<IAuthorizationHandler, MustOwnImageHandler>();
+            //services.AddAuthorization(authOptions =>
+            //{
+            //    authOptions.AddPolicy(
+            //        "MustOwnImage",
+            //        policyBuilder =>
+            //        {
+            //            policyBuilder.RequireAuthenticatedUser(); // must be authenticaded
+            //            // logged in user owns an image
+            //            policyBuilder.AddRequirements(
+            //                new MustOwnImageRequirement()
+            //             );
+            //        }
+            //        );
+            //});
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "NxCore.API", Version = "v1" });
             });
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

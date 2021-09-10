@@ -18,7 +18,15 @@ namespace NxCore.IDP
                  new IdentityResource(
                      "roles", "Your roles(s)",
                      new List<string>(){ "role"}
-                     )
+                     ),
+                 new IdentityResource(
+                     "country", "The country you re living in",
+                     new List<string>(){ "country"}
+                     ),
+                 new IdentityResource(
+                     "subscriptionlevel", "Your subscripton level",
+                     new List<string>(){ "subscriptionlevel" }
+                     ),
             };
 
         public static IEnumerable<ApiScope> ApiScopes =>
@@ -34,6 +42,20 @@ namespace NxCore.IDP
 
         public static IEnumerable<Client> Clients =>
             new Client[] 
-            { };
+            {
+            /*
+             * Once we have some clients:
+             * AllowedScopes = {
+             * IdentityServerConstants.StandardScopes.OpenId,
+             * IdentityServerConstants.StandardScopes.Profile
+             * IdentityServerConstants.StandardScopes.Adress,
+             * -------- these are non standard below -------
+             * "roles",
+             * "imagegalleryapi"
+             * "country",
+             * "subscriptionlevel"
+             * }
+             * **/
+            };
     }
 }
